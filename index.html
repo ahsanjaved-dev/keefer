@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 6</title>
+    <title>Keefer</title>
     <link rel="stylesheet" href="src/main.css">
-    <link rel="icon" href="/src/assets/favicon.jpg">
+    <link rel="icon" href="https://i.ibb.co/pwLNXdZ/favicon.jpg">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         @media only screen and (max-width:760px ){
           #header{
@@ -18,8 +19,14 @@
             height: auto;
           }
           #headerTextEnd{
-            margin-left: 10px;
+            padding: 0px;
+            padding-left: 20px;
           } 
+
+          #header-col-1{
+            padding: 0px;
+          }
+          
 
           #mainRow{
             display: flex;
@@ -94,23 +101,11 @@
             justify-content: center;
             align-items: center;
           }
-          #mainBody{
-            background-color: #7a7a7a;
-          }
-          #mainHeader{
-            margin-left: 20px;  
-            background-color: white;
-          }
-          #mainContent{
-            margin-left: 20px;
-            background-color: white;
-            padding-bottom: 20px;
-            margin-bottom: 10px;
-          }                
+                      
  
           #cardimg2{
             height: 425px;
-            background-image: url(/src/assets/form_bg.jpg);    
+            background-image: url(https://i.ibb.co/ryyjRLQ/form-bg.jpg);    
           }
           #cardimg2-p1{
             color: white; 
@@ -342,6 +337,10 @@
         }
 
         @media only screen and (min-width:760px ){
+          #header-row-2{
+            margin-left: 0px;
+            margin-right: 0px;
+          }
           #a1{
             height: 42px;
             width: 160px;
@@ -511,7 +510,7 @@
           #cardimg2{
             width: 500px;
             height: 340px;
-            background-image: url(/src/assets/form_bg.jpg);    
+            background-image: url(https://i.ibb.co/ryyjRLQ/form-bg.jpg);    
           }
           #cardimg2-p1{
             color: white; 
@@ -566,6 +565,10 @@
         }
 
         @media only screen and (min-width:1260px ){
+          #header-row-2{
+            margin-left: 0px;
+            margin-right: 0px;
+          }        
           #cardimg1{
             width: 500px;
             height: 340px;
@@ -573,7 +576,7 @@
           #cardimg2{
             width: 500px;
             height: 340px;
-            background-image: url(/src/assets/form_bg.jpg);    
+            background-image: url(https://i.ibb.co/ryyjRLQ/form-bg.jpg);    
           }
           #cardimg2-p1{
             color: white; 
@@ -835,22 +838,33 @@
            
           }
         .nav-link:hover{
-            background-color: #7a7a7a;
-           
+            background-color: #7a7a7a;       
         }   
+        #hrImg{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        html{
+          scrollbar-width: none;
+        }
+       
        
     </style>
 </head>
 <body id="mainBody" style="overflow-x: hidden;">
     <header id="mainHeader">
         <div class="row" id="header">
-            <div class="col" ><img src="/src/assets/logo.png" alt="logo"  id="i1"></div>
+            <div class="col" id="header-col-1" ><img src="/src/assets/logo.png" alt="logo"  id="i1"></div>
             <div class="col" id="headerTextEnd"><h5 style=" font-weight: bold; color: #851312; letter-spacing: 0.5px; margin-top: 10px;">CALL OUR OFFICES NOW!</h5><div id="p1"></div> <h1 style="font-weight: bold;" >540.433.6906</h2> <p style="font-weight: bold;font-size: 15.5px; color: gray;">Get Your Questions Answered Fast</p></div>
             
         </div>
-
-        <nav class="navbar navbar-expand-lg " style="background-color: #851312; padding: 0px;">
-            <div class="container-fluid">
+        <div class="row" id="header-row-2">
+          <nav id="navbar"  class="navbar navbar-expand-lg " style="background-color: #851312; padding: 0px;">
+            <div class="container-fluid" >
              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -880,6 +894,8 @@
               </div>
             </div>
           </nav>
+        </div>
+        
 
 
     </header>
@@ -889,7 +905,7 @@
             <div class="row mb-4" id="mainCards">
                 <div class="col mt-4 " id="mainCards-1" >
                     <div class="card " id="cardimg1" >
-                        <img src="/src/assets/gurantee_banner.gif"  class="card-img-top " alt="gurrented" id="cardimg1-hg" >
+                        <img src="https://i.ibb.co/r74kbS6/gurantee-banner.gif"  class="card-img-top " alt="gurrented" id="cardimg1-hg" >
                 
                       </div>
                 </div>
@@ -911,7 +927,7 @@
                             <input type="text" style="height: 22px;margin-top: 5px;">
                             <input type="text" style="height: 22px;margin-top: 5px;">
                           </div>
-                          <div class="col" id="cardimg2-input-fields3"><img src="/src/assets/confidential.png" id="cardimg2-input-fields3-img" alt="img" style="transform: rotate(10deg);margin-top: 15px;"></div>
+                          <div class="col" id="cardimg2-input-fields3"><img src="https://i.ibb.co/HgGRS0g/confidential.png" id="cardimg2-input-fields3-img" alt="img" style="transform: rotate(10deg);margin-top: 15px;"></div>
                         </div>
                           
                         <div><input type="text" id="cardimg2-input" placeholder="Tell us about your case here..."></div>
@@ -934,7 +950,7 @@
                 
                   </div>
                   <div class="col">
-                    <img src="/src/assets/paste_board.gif" alt="" id="mainRow-img"  class="img-fluid">   
+                    <img src="https://i.ibb.co/M5tT9N9/paste-board.gif" alt="" id="mainRow-img"  class="img-fluid">   
                     <div id="mainRow-col-1-btn"><button id="mainRow-btn" class="btn"> CLICK HERE<i class="bi bi-caret-right-fill"></i></button></div> 
                   </div>          
                 </div>
@@ -944,19 +960,19 @@
               <div class="col-4" id="mainRow-col-2">
                  <div class="row">
                   <div class="col"><h6 style="font-weight: bold;">LAW <b style="color: brown;"> BLOG</b></h6><p style="font-size: small;">Learn more about<br>Virginia Traffic Laws.</p><button style="width: 130px;height: 34px; background-color: brown;color: white; border-radius: 0px;margin-bottom: 10px;" class="btn">CLICK HERE<i class="bi bi-caret-right-fill" "></i></button></div>
-                  <div class="col"><img src="/src/assets/pic1.gif" alt="" class="img-fluid" style="margin-top: 10px;margin-bottom: 10px;"></div>
+                  <div class="col"><img src="https://i.ibb.co/mH35Hdh/pic1.gif" alt="" class="img-fluid" style="margin-top: 10px;margin-bottom: 10px;"></div>
                
                 </div>
                   <div class="row" id="mainRow-col-2-row2"><hr>
                     <div class="col"><h6 style="margin-top: 10px;">CASE <b> RESULTS</b></h6> <p style="font-size: small;">See how we help our clients.<br>Read our latest case results.</p> <button style="background-color: brown;color: white;width: 130px; height: 34px; border-radius: 0px;margin-bottom: 10px;" class="btn">CLICK HERE<i class="bi bi-caret-right-fill" "></i></button> </div>
-                    <div class="col"><img src="/src/assets/order_icon.gif" alt="" class="img-fluid"></div>                                   
+                    <div class="col"><img src="https://i.ibb.co/3pth134/order-icon.gif" alt="" class="img-fluid"></div>                                   
                    </div>
                   
               </div>
 
               <div class="col-4" id="mainRow-col-3">
                  <div class="row">
-                  <div class="col" id="mainRow-col-3-img"><img src="/src/assets/a90.gif" alt="" class="img-fluid" style="margin-right: 10px;"> <img src="/src/assets/n90.gif" alt="" class="img-fluid"> </div>      
+                  <div class="col" id="mainRow-col-3-img"><img src="https://i.ibb.co/cY6bJfT/a90.gif" alt="img" class="img-fluid" style="margin-right: 10px;"> <img src="https://i.ibb.co/WDzGsSn/n90.gif" alt="img" class="img-fluid"> </div>      
                  </div>
                  <div class="row mt-3">
                   <div class="col" id="mainRow-col-3-text"> <h4>CERTIFICATES & <br><b style="color: brown;">CREDENTIALS</b></h4> <p>Keefer Law Firm has protected the <br>the rights of Virginians for over 30 years.</p> <button  id="mainRow-1-btn" class="btn">CLICK HERE<i class="bi bi-caret-right-fill" ></i></button> </div>
@@ -965,7 +981,7 @@
               </div>
            </div>
            
-           <img src="/src/assets/hr_shadow.png" alt="" class="img-fluid">
+           <img id="hrImg" src="https://i.ibb.co/z8y3bPW/hr-shadow.png" alt="hr" class="img-fluid">
 
            <div class="row my-2" id="mainrow2">
             <div class="col-3" id="mainrow2-col-1">
@@ -1014,11 +1030,9 @@
               <div id="q1"><img src="/src/assets/fb_icon.gif" alt="facebook_icon" id="q2"> <img src="/src/assets/google_icon.gif" alt="gmail_icon" id="q3"> <img src="/src/assets/twitter_icon.gif" alt="twitter_icon" id="q4"> <img src="/src/assets/linked_icon.gif" alt="linkedin_icon" id="q5"></div>
 
 
-
             </div>
            </div>          
         </div>
     </main>
-     
 </body>
 </html>
